@@ -59,6 +59,9 @@ class OnPolicyMCPredictor(MonteCarloPolicyPredictor):
             
             average_return = self._returns_grid[coords[0], coords[1]] / self._count_grid[coords[0], coords[1]]
             
+            if np.isnan(average_return):
+                print("ye")
+                print(np.isnan(average_return))
             self._v.set_value(coords[0], coords[1], average_return)
 
     def _episode_pi(self):

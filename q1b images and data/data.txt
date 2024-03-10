@@ -1,0 +1,228 @@
+-- 100 OUTER LOOPS -- 
+True, 1: off policy error: 2157.490911046937, on policy error: 0.36804226556704006
+True, 2: off policy error: 682.5226002937801, on policy error: 0.3519791086328303
+True, 5: off policy error: 282.5086074613455, on policy error: 0.5496302554969081
+True, 10: off policy error: 142.5606942344614, on policy error: 0.5322224094930577
+True, 20: off policy error: 141.91959912262138, on policy error: 0.40577493793300967
+True, 50: off policy error: 1.8777233588549254, on policy error: 0.3693668644378346
+True, 100: off policy error: 1.5066485824633966, on policy error: 0.3756002762646392
+True, 1000: off policy error: 0.9189973998313189, on policy error: 0.36421013916855455
+
+False, 1: off policy error: 0.919027054891143, on policy error: 0.3600717533116068
+False, 2: off policy error: 0.9192008205422397, on policy error: 0.3511505923738718
+False, 5: off policy error: 0.9194726776052529, on policy error: 0.344659864116237
+False, 10: off policy error: 0.9201509138913309, on policy error: 0.31502889092827246
+False, 20: off policy error: 0.9164092382657348, on policy error: 0.27112611800349323
+False, 50: off policy error: 0.7559304017483816, on policy error: 0.21828430223349216
+False, 100: off policy error: 0.7329559521511068, on policy error: 0.12426908734798855
+False, 1000: off policy error: 0.5831654966593135, on policy error: 0.009065973287300348
+
+-- NO OUTER LOOP--
+True, 1: off policy error: 7429.036274191474, on policy error: 7213.883742581242
+True, 2: off policy error: 6400.839608543262, on policy error: 7002.1260371851195
+True, 5: off policy error: 6184.367426002567, on policy error: 3590.7090480027487
+True, 10: off policy error: 5116.091107459563, on policy error: 1553.2181235295084
+True, 20: off policy error: 4734.793504842549, on policy error: 628.0782135837042
+True, 50: off policy error: 2920.1196675759024, on policy error: 0.8637852029142444
+True, 100: off policy error: 1833.5015358848118, on policy error: 0.5553365423371858
+True, 1000: off policy error: 302.9843154979238, on policy error: 0.3981758245508684
+False, 1: off policy error: 302.9843250147618, on policy error: 0.39861340178732446
+False, 2: off policy error: 302.9843585643174, on policy error: 0.39493157181691696
+False, 5: off policy error: 302.97861862520375, on policy error: 0.39482019584305716
+False, 10: off policy error: 302.98089109245507, on policy error: 0.3561377700975815
+False, 20: off policy error: 302.9828135933261, on policy error: 0.29709526444433537
+False, 50: off policy error: 302.97678571424757, on policy error: 0.26644321091787954
+False, 100: off policy error: 302.95478198526354, on policy error: 0.09609572127017041
+False, 1000: off policy error: 151.58751524038547, on policy error: 0.05210746049868612
+
+--10 OUTER LOOPS--
+True, 1: off policy error: 5882.168988844049, on policy error: 2509.038330729461
+True, 2: off policy error: 4490.687064868001, on policy error: 968.4912650075125
+True, 5: off policy error: 3384.2272308484876, on policy error: 1.1143363941541014
+True, 10: off policy error: 1499.2978576356945, on policy error: 0.8713349819398073
+True, 20: off policy error: 1180.0640574668778, on policy error: 0.6363770146701905
+True, 50: off policy error: 282.19863797901525, on policy error: 0.43775766972655494
+True, 100: off policy error: 282.20793546212633, on policy error: 0.4008481730689627
+True, 1000: off policy error: 1.5338228600912218, on policy error: 0.39713929028987816
+False, 1: off policy error: 1.5338772712715831, on policy error: 0.3962876983795562
+False, 2: off policy error: 1.5331288426820948, on policy error: 0.39652812249998437
+False, 5: off policy error: 1.5315006723647109, on policy error: 0.39695989122329767
+False, 10: off policy error: 1.5329204681596984, on policy error: 0.3705159147307223
+False, 20: off policy error: 1.5499117210630342, on policy error: 0.30961379935473277
+False, 50: off policy error: 1.358163305387271, on policy error: 0.2510400186125572
+False, 100: off policy error: 1.3496034195239375, on policy error: 0.12001899254598995
+False, 1000: off policy error: 0.8687966759022526, on policy error: 0.019937395784294567
+
+1, True, 1: off policy error: 7847.7837922945255, on policy error: 5573.671685560261
+1, True, 2: off policy error: 6629.645987158763, on policy error: 6184.374682361591
+1, True, 5: off policy error: 6992.192675583473, on policy error: 3465.4618423364964
+1, True, 10: off policy error: 5413.990474254605, on policy error: 1222.2022224787056
+1, True, 20: off policy error: 3050.149878596349, on policy error: 597.3684514448797
+1, True, 50: off policy error: 3964.522432824597, on policy error: 1.3794345170530007
+1, True, 100: off policy error: 3895.396430150796, on policy error: 0.5708328340966029
+1, True, 1000: off policy error: 745.320730368735, on policy error: 0.4605926084765052
+1, False, 1: off policy error: 7420.41105413315, on policy error: 5015.871548281339
+1, False, 2: off policy error: 7420.409555688826, on policy error: 5233.705142812059
+1, False, 5: off policy error: 7203.099296782033, on policy error: 3086.0446411249345
+1, False, 10: off policy error: 4317.566163145787, on policy error: 3386.9431198524007
+1, False, 20: off policy error: 5045.28361680106, on policy error: 608.0926727773766
+1, False, 50: off policy error: 4132.679778307024, on policy error: 459.01985756345306
+1, False, 100: off policy error: 2782.015845983807, on policy error: 1.3812778224958928
+1, False, 1000: off policy error: 1105.5846929493093, on policy error: 0.07398598580287669
+
+10, True, 1: off policy error: 6998.454077383301, on policy error: 3419.144478552197
+10, True, 2: off policy error: 5824.019162207347, on policy error: 1460.4157757235866
+10, True, 5: off policy error: 4844.547493571963, on policy error: 305.01394081787055
+10, True, 10: off policy error: 3224.258107189908, on policy error: 0.8185954675394159
+10, True, 20: off policy error: 2168.010382814068, on policy error: 0.4345058612949668
+10, True, 50: off policy error: 912.0084519290796, on policy error: 0.9796003907984
+10, True, 100: off policy error: 283.0737469505939, on policy error: 0.3854747355581999
+10, True, 1000: off policy error: 1.3794658997589668, on policy error: 0.36787321839493153
+10, False, 1: off policy error: 5810.739039644676, on policy error: 1407.7107990729203
+10, False, 2: off policy error: 5835.867731441165, on policy error: 488.22188060902107
+10, False, 5: off policy error: 4649.129257922824, on policy error: 4.980448343397135
+10, False, 10: off policy error: 2319.0214617557567, on policy error: 140.70571935008806
+10, False, 20: off policy error: 2615.8702306510586, on policy error: 0.15604358810586857
+10, False, 50: off policy error: 945.919883774323, on policy error: 0.06847413063004869
+10, False, 100: off policy error: 736.7775591092492, on policy error: 0.12017026726908955
+10, False, 1000: off policy error: 1.5699513711993809, on policy error: 0.013754216874112466
+
+100, True, 1: off policy error: 3974.1540142045046, on policy error: 0.847245259107657
+100, True, 2: off policy error: 2723.62547484149, on policy error: 0.5368905461198086
+100, True, 5: off policy error: 597.9395266995068, on policy error: 0.589529740771235
+100, True, 10: off policy error: 302.71642701937077, on policy error: 0.5296711317540164
+100, True, 20: off policy error: 2.657125678269559, on policy error: 0.41230780249441346
+100, True, 50: off policy error: 151.07578271081962, on policy error: 0.3590571443049547
+100, True, 100: off policy error: 1.8363077074599792, on policy error: 0.35160466891831615
+100, True, 1000: off policy error: 0.9145729646415108, on policy error: 0.36811462995130007
+
+100, False, 1: off policy error: 4296.992918997614, on policy error: 0.26201966882095523
+100, False, 2: off policy error: 2593.44510044306, on policy error: 140.54966748420915
+100, False, 5: off policy error: 1285.3237256998261, on policy error: 0.0553660990106735
+100, False, 10: off policy error: 760.7215639404296, on policy error: 0.04414903753210833
+100, False, 20: off policy error: 1.6049345311033638, on policy error: 0.026838532161077087
+100, False, 50: off policy error: 1.566099300595602, on policy error: 0.021097348539745726
+100, False, 100: off policy error: 2.0198753497857314, on policy error: 0.015872264934932292
+100, False, 1000: off policy error: 0.3709200796971716, on policy error: 0.0006461934952496457
+1, True, 1: off policy error: 7631.31160975383, on policy error: 7424.304222081883
+1, True, 2: off policy error: 7631.31160975383, on policy error: 5677.684865381541
+1, True, 5: off policy error: 6231.246282666757, on policy error: 1067.8552271464728
+1, True, 10: off policy error: 5815.0887791740815, on policy error: 1902.122360490906
+1, True, 20: off policy error: 6391.401428688128, on policy error: 141.37389253593824
+1, True, 50: off policy error: 4317.966614785583, on policy error: 0.8650843110592702
+1, True, 100: off policy error: 3942.241583713444, on policy error: 1.179672350959988
+1, True, 1000: off policy error: 442.3333927129455, on policy error: 0.2890822680653346
+1, True, 1: off policy error: 7636.043661863423, on policy error: 7014.718691255054
+1, True, 2: off policy error: 7631.31160975383, on policy error: 5311.293999513811
+1, True, 5: off policy error: 6819.602060039347, on policy error: 2591.9981064203444
+1, True, 10: off policy error: 6010.279378972828, on policy error: 820.5146733913684
+1, True, 20: off policy error: 6786.694603357521, on policy error: 150.00178382759339
+1, True, 50: off policy error: 4663.952407061666, on policy error: 0.715335036644229
+1, True, 100: off policy error: 2341.303653018609, on policy error: 149.7397988762717
+1, True, 1000: off policy error: 1.7858724185491603, on policy error: 0.4738711825638428
+1, True, 1: off policy error: 7631.31160975383, on policy error: 5385.712648931152
+1, True, 2: off policy error: 7420.41105413315, on policy error: 4684.490993095456
+1, True, 5: off policy error: 5510.1812905111665, on policy error: 2902.1690424611447
+1, True, 10: off policy error: 5805.442080912452, on policy error: 1488.4012166805621
+1, True, 20: off policy error: 5835.97585640902, on policy error: 304.87336070951886
+1, True, 50: off policy error: 4493.485888371201, on policy error: 301.00791767269885
+1, True, 100: off policy error: 3332.840089588899, on policy error: 2.410113839884137
+1, True, 1000: off policy error: 596.4156832351543, on policy error: 0.425000551035531
+1, False, 1: off policy error: 7631.31160975383, on policy error: 6234.024398212546
+1, False, 2: off policy error: 7420.41105413315, on policy error: 6637.465712567743
+1, False, 5: off policy error: 7002.351650449142, on policy error: 1322.3528808719498
+1, False, 10: off policy error: 7203.931586579322, on policy error: 828.8846923440716
+1, False, 20: off policy error: 4844.602970491422, on policy error: 469.7973104672814
+1, False, 50: off policy error: 3400.022829905135, on policy error: 432.40684040456586
+1, False, 100: off policy error: 3536.338018871556, on policy error: 151.65401763956157
+1, False, 1000: off policy error: 2.114058312782978, on policy error: 0.09327396625887248
+10, True, 1: off policy error: 7414.8551625495975, on policy error: 2055.382957963145
+10, True, 2: off policy error: 4438.9095137640725, on policy error: 149.75140127804522
+10, True, 5: off policy error: 3886.81121444274, on policy error: 0.6994350701035332
+10, True, 10: off policy error: 3397.08063158966, on policy error: 0.35877239422656765
+10, True, 20: off policy error: 1637.4826042565628, on policy error: 0.671734910374198
+10, True, 50: off policy error: 1116.4691330251296, on policy error: 0.7728539083189734
+10, True, 100: off policy error: 433.3600679344329, on policy error: 0.39298556162954484
+10, True, 1000: off policy error: 1.6555716607016346, on policy error: 0.3615261985508364
+10, False, 1: off policy error: 6385.314467415949, on policy error: 1145.969084061311
+10, False, 2: off policy error: 5401.586173301008, on policy error: 1227.808507224742
+10, False, 5: off policy error: 4473.569822900697, on policy error: 307.18579981620377
+10, False, 10: off policy error: 2931.665174839731, on policy error: 0.8619349247105649
+10, False, 20: off policy error: 1789.6547741571464, on policy error: 0.2482736437674205
+10, False, 50: off policy error: 756.178733175282, on policy error: 0.1226465962954009
+10, False, 100: off policy error: 305.97981281445556, on policy error: 0.14310804232842322
+10, False, 1000: off policy error: 1.151164374573723, on policy error: 0.009775948032448165
+100, True, 1: off policy error: 3386.503926844151, on policy error: 1.3645031874277034
+100, True, 2: off policy error: 1989.5948039838509, on policy error: 1.2009567084719808
+100, True, 5: off policy error: 433.991914365122, on policy error: 0.4697731803208094
+100, True, 10: off policy error: 1217.6251289523473, on policy error: 0.34934077290282917
+100, True, 20: off policy error: 142.90280282752676, on policy error: 0.46221670108209856
+100, True, 50: off policy error: 1.843521667468161, on policy error: 0.4166945323920237
+100, True, 100: off policy error: 1.7115303229771706, on policy error: 0.37953739353709814
+100, True, 1000: off policy error: 0.9926845278963253, on policy error: 0.3756343572776818
+100, False, 1: off policy error: 1112.4419855265016, on policy error: 149.4405241645094
+100, False, 2: off policy error: 517.0723006859278, on policy error: 0.7625302694036189
+100, False, 5: off policy error: 1056.313831532513, on policy error: 0.32382067615842125
+100, False, 10: off policy error: 586.2043409540615, on policy error: 0.04376139420411366
+100, False, 20: off policy error: 142.50559484656904, on policy error: 0.009923501439114453
+100, False, 50: off policy error: 1.0464956391094604, on policy error: 0.013913378984094692
+100, False, 100: off policy error: 1.7698004499164468, on policy error: 0.011542334829684777
+1, True, 1: off policy error: 7631.31160975383, on policy error: 7420.41105413315
+1, True, 2: off policy error: 7631.31160975383, on policy error: 7203.938871592457
+1, True, 5: off policy error: 6819.663350418307, on policy error: 2683.510538316226
+1, True, 10: off policy error: 6015.599818535824, on policy error: 1106.4549613308568
+1, True, 20: off policy error: 5787.413754367831, on policy error: 581.9504536063889
+1, True, 50: off policy error: 3157.0488993299873, on policy error: 308.40070843287145
+1, True, 100: off policy error: 3921.935394162799, on policy error: 0.9894386786672136
+1, True, 1000: off policy error: 150.46307682875008, on policy error: 0.4259916314094738
+1, False, 1: off policy error: 7631.31160975383, on policy error: 5757.02751666173
+1, False, 2: off policy error: 7414.839427213135, on policy error: 5479.553425821604
+1, False, 5: off policy error: 6790.117851958269, on policy error: 4486.248140734624
+1, False, 10: off policy error: 5879.379053081799, on policy error: 757.0444087273855
+1, False, 20: off policy error: 4883.546991670044, on policy error: 1053.7052938126656
+1, False, 50: off policy error: 3470.313815680662, on policy error: 140.98574407611608
+1, False, 100: off policy error: 3603.8925290856187, on policy error: 0.4156559609427727
+1, False, 1000: off policy error: 614.465420334191, on policy error: 0.10909817973208583
+10, True, 1: off policy error: 6228.087463412645, on policy error: 292.41189570865924
+10, True, 2: off policy error: 5044.914519595153, on policy error: 458.53935831475883
+10, True, 5: off policy error: 4574.321560042602, on policy error: 153.820119466458
+10, True, 10: off policy error: 3088.284995779098, on policy error: 0.9660849896633288
+10, True, 20: off policy error: 2321.127207062418, on policy error: 0.5690612023872509
+10, True, 50: off policy error: 614.5174210510361, on policy error: 0.4914071467978836
+10, True, 100: off policy error: 623.6597298329474, on policy error: 0.3927941334498371
+10, True, 1000: off policy error: 141.77111726647243, on policy error: 0.3700356211564915
+10, False, 1: off policy error: 5999.1522533478865, on policy error: 1280.7265308932951
+10, False, 2: off policy error: 5229.187191968874, on policy error: 305.4928688826107
+10, False, 5: off policy error: 2864.7208295601667, on policy error: 2.9247041549488495
+10, False, 10: off policy error: 1834.9330454878134, on policy error: 140.66329262311862
+10, False, 20: off policy error: 3495.4410205118143, on policy error: 0.37053694521545916
+10, False, 50: off policy error: 431.39264039247996, on policy error: 0.20737754884318982
+10, False, 100: off policy error: 616.2572547032943, on policy error: 0.08986380793397948
+10, False, 1000: off policy error: 2.0100506966779315, on policy error: 0.0034227192830241474
+100, True, 1: off policy error: 2771.346005808588, on policy error: 0.5655974821900664
+100, True, 2: off policy error: 1801.7623270925717, on policy error: 0.43315258319033584
+100, True, 5: off policy error: 1315.7350554033949, on policy error: 0.5286277941507347
+100, True, 10: off policy error: 153.23425705880237, on policy error: 0.4779096545621321
+100, True, 20: off policy error: 291.3318744789533, on policy error: 0.3530694891518169
+100, True, 50: off policy error: 1.813023646755417, on policy error: 0.38207149262712065
+100, True, 100: off policy error: 1.8081668690698827, on policy error: 0.3953139944094631
+100, True, 1000: off policy error: 1.3853961659919756, on policy error: 0.36610689495821463
+100, False, 1: off policy error: 2673.744762791555, on policy error: 0.4222153758706551
+100, False, 2: off policy error: 1855.6888783240422, on policy error: 0.30754664989247066
+100, False, 5: off policy error: 1247.6024721640035, on policy error: 0.2581358858438652
+100, False, 10: off policy error: 293.13505779322026, on policy error: 0.13042567402104324
+100, False, 20: off policy error: 585.6512384044007, on policy error: 0.06781282210037902
+100, False, 50: off policy error: 1.1662567043170469, on policy error: 0.019731416111117468
+100, False, 100: off policy error: 1.717980355718178, on policy error: 0.006743461419804215
+100, False, 1000: off policy error: 0.9374371794529502, on policy error: 0.0013280340570987954
+1, True, 1000: off policy error: 1283.7112209350466, on policy error: 0.5027890753827807
+1, True, 10000: off policy error: 2.145984221110835, on policy error: 0.39116849211239
+1, True, 100000: off policy error: 1.4806731268485114, on policy error: 0.3769117147725832
+1, True, 1000: off policy error: 445.9356142636515, on policy error: 0.37669267540096235
+1, True, 10000: off policy error: 1.9915530696496, on policy error: 0.3692073337619871
+1, True, 100000: off policy error: 1.233359085048303, on policy error: 0.3689438478613561
+1, True, 1000000: off policy error: 0.683910496746036, on policy error: 0.3647427861335877
+1, False, 1000: off policy error: 291.95085222438274, on policy error: 0.8105109946925401
+1, False, 10000: off policy error: 1.1552849746703355, on policy error: 0.01140733642795177
+1, False, 100000: off policy error: 0.3695716096821245, on policy error: 0.0013768672764504755
+1, False, 1000000: off policy error: 0.382036459382131, on policy error: 9.783906884596628e-05
