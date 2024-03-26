@@ -59,7 +59,7 @@ if __name__ == '__main__':
         td_drawers[i] = ValueFunctionDrawer(td_predictors[i].value_function(), drawer_height)
 
 
-    def get_current_value_functions(dpb: PolicyEvaluator):
+    def get_current_value_functions(dpb):
 
         environment_map = dpb._environment.map()
         value_functions = np.zeros((environment_map.width(), environment_map.height()))
