@@ -20,6 +20,9 @@ from p1.low_level_environment import LowLevelEnvironment
 from p1.low_level_actions import LowLevelActionType
 from p1.low_level_policy_drawer import LowLevelPolicyDrawer
 
+import numpy as np
+import matplotlib.pyplot as plt
+
 if __name__ == '__main__':
     airport_map, drawer_height = test_three_row_scenario()
     env = LowLevelEnvironment(airport_map)
@@ -54,16 +57,59 @@ if __name__ == '__main__':
         td_predictors[i].set_alpha(alpha_values[i])
         td_predictors[i].set_target_policy(pi)
         td_drawers[i] = ValueFunctionDrawer(td_predictors[i].value_function(), drawer_height)
-        
+
+
+    def get_current_value_functions(dpb: PolicyEvaluator):
+
+        environment_map = dpb._environment.map()
+        value_functions = np.zeros((environment_map.width(), environment_map.height()))
+
+        for x in range(environment_map.width()):            
+            for y in range(environment_map.height()):
+
+                value_functions[x, y] = dpb.value_function().value(x, y)
+
+        np.nan_to_num(value_functions, 0.0)
+
+        return value_functions
+
+
+    pe_value_functions = get_current_value_functions(pe)
+
+
+    def get_rms_error(estimated_values):
+            
+            return np.sqrt(np.mean((np.array(estimated_values) - np.array(pe_value_functions))**2))
+
+
+    alpha_errors = {alpha: [] for alpha in alpha_values}
+
     for e in range(400):
-        for i in range(num_values):
+        
+        for i, alpha in enumerate(alpha_values):
+            
             td_predictors[i].evaluate()
+            
+            current_value_functions_estimate = get_current_value_functions(td_predictors[i])
+            
+            error = get_rms_error(current_value_functions_estimate)
+            
+            alpha_errors[alpha].append(error)
+
             td_drawers[i].update()        
  
     v_pe.save_screenshot("truth_pe.pdf")
     
     for i in range(num_values):
         td_drawers[i].update()
-        td_drawers[i].save_screenshot(f"td-{int(alpha_values[i]*10):03}-pe.pdf")
+        td_drawers[i].save_screenshot(f"td-{alpha_values[i]}-pe.pdf")
     
-    
+    for alpha in alpha_values:
+        plt.plot(alpha_errors[alpha], label=f"alpha = {alpha}")
+
+    plt.xlabel("Episodes")
+    plt.ylabel("Empirical RMS error (averaged over states)")
+    plt.title("Empirical RMS error / Episodes")
+
+    plt.legend()
+    plt.show()
