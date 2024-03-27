@@ -23,7 +23,7 @@ class ValueFunctionDrawer(GridDrawer):
         self._value_texts = {}
         
         # The font size
-        self._font_size = 5
+        self._font_size = 10
         
         # The minimum change in value to trigger the red text appearing
         self._value_change_threshold = 5e-3

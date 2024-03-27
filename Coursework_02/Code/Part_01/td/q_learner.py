@@ -28,7 +28,7 @@ class QLearner(TDController):
         self._v.set_name("Q-Learning Expected Value Function")
         self._pi.set_name("Q-Learning Greedy Policy")
             
-    def _update_action_and_value_functions_from_episode(self, episode):
+    def _update_action_and_value_functions_from_episode(self, episode, update_action=True):
         
         # Q2b:
         # Complete implementation of this method
@@ -40,14 +40,11 @@ class QLearner(TDController):
         # This calls a method in the TDController which will update the
         # Q value estimate in the base class and will update
         # the greedy policy and estimated state value function
-        
-        
         # Handle everything up to the last state transition to the terminal state
         s = episode.state(0)
         coords = s.coords()
         reward = episode.reward(0)
         a = episode.action(0)
-        
         for step_count in range(1, episode.number_of_steps()):
             new_q = (1 - self._alpha) * self._Q[coords[0], coords[1], a] + self._alpha * reward
             s_prime = episode.state(step_count)
@@ -57,9 +54,8 @@ class QLearner(TDController):
             action_values = self._Q[coords_prime[0], coords_prime[1],  :]
             max_actions = (np.where(action_values == np.amax(action_values)))[0]
             max_action = max_actions[random.choice(range(max_actions.size))]
-            
             new_q += self._alpha * self._gamma * self._Q[coords_prime[0], coords_prime[1], max_action]
-            self._update_q_and_policy(coords, a, new_q)
+            self._update_q_and_policy(coords, a, new_q, update_action)
             reward = episode.reward(step_count)
             s = s_prime
             coords = coords_prime

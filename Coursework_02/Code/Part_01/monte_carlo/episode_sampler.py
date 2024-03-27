@@ -40,8 +40,7 @@ class EpisodeSampler(object):
         for _ in range(self._max_steps):
             
             next_state, reward, done, is_truncated, info = self._environment.step(action)
-            
-            #print(f"next_state={next_state};action={action};reward={reward};done={done}")
+            #print(f"action={action};reward={reward};done={done}")
             
             episode.append(state, action, reward)
             

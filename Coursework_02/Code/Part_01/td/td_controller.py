@@ -43,7 +43,7 @@ class TDController(TDAlgorithmBase):
     def policy(self):
         return self._pi
 
-    def find_policy(self):
+    def find_policy(self, update_action=True):
         
         # Although this can be done in real-time, we follow the convention
         # of running it MC-like. 
@@ -64,19 +64,19 @@ class TDController(TDAlgorithmBase):
                 continue
             
             # Update with the current episode
-            self._update_action_and_value_functions_from_episode(new_episode)
+            self._update_action_and_value_functions_from_episode(new_episode, update_action)
             
             # Pick several randomly from the experience replay buffer and update with those as well
             for _ in range(min(self._replays_per_update, self._stored_experiences)):
                 episode = self._draw_random_episode_from_experience_replay_buffer()
-                self._update_action_and_value_functions_from_episode(episode)
+                self._update_action_and_value_functions_from_episode(episode, update_action)
                 
             self._add_episode_to_experience_replay_buffer(new_episode)
         
-    def _update_action_and_value_functions_from_episode(self, episode):
+    def _update_action_and_value_functions_from_episode(self, episode, update_action = True):
         raise NotImplementedError()
         
-    def _update_q_and_policy(self, coords, a, new_q):
+    def _update_q_and_policy(self, coords, a, new_q, update_action=True):
         
         # Update the Q value
         
@@ -98,7 +98,8 @@ class TDController(TDAlgorithmBase):
                 if random.random() < 0.5:
                     max_a = a
 
-        self._pi.set_action(coords[0], coords[1], max_a)
+        if update_action:
+            self._pi.set_action(coords[0], coords[1], max_a)
 
         # Work out the state value
         v = 0
