@@ -58,6 +58,7 @@ if __name__ == '__main__':
     # for i in range(40, -1, -1):
     for i in range(40):
 
+        # pi.set_epsilon(lst[i])
         # pi.set_epsilon(1/math.sqrt(1+0.25*i))
 
         start_time = time.time()
@@ -85,7 +86,7 @@ if __name__ == '__main__':
             """
         )
         
-        pi.set_epsilon(1/math.sqrt(1+0.25*i))
+        #pi.set_epsilon(1/math.sqrt(1+0.25*i))
 
     plt.plot(episode_durations, label="Episode Timings")
 
