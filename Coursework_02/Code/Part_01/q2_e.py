@@ -21,6 +21,9 @@ from p1.low_level_environment import LowLevelEnvironment
 from p1.low_level_actions import LowLevelActionType
 from p1.low_level_policy_drawer import LowLevelPolicyDrawer
 
+import time
+import matplotlib.pyplot as plt
+
 if __name__ == '__main__':
     airport_map, drawer_height = corridor_scenario()
 
@@ -47,11 +50,49 @@ if __name__ == '__main__':
     value_function_drawer = ValueFunctionDrawer(policy_learner.value_function(), drawer_height)    
     greedy_optimal_policy_drawer = LowLevelPolicyDrawer(policy_learner.policy(), drawer_height)
     
+    episode_durations = []
+
+    # Different empirical experiments
+    # lst = [0.05, 0.95] * 40
+    # pi.set_epsilon(1)
+    # for i in range(40, -1, -1):
     for i in range(40):
-        print(i)
+
+        # pi.set_epsilon(1/math.sqrt(1+0.25*i))
+
+        start_time = time.time()
         policy_learner.find_policy()
+        end_time = time.time()
+        
+        episode_duration = end_time - start_time
+        episode_durations.append(episode_duration)
+
         value_function_drawer.update()
         greedy_optimal_policy_drawer.update()
-        pi.set_epsilon(1/math.sqrt(1+0.25*i))
-        print(f"epsilon={1/math.sqrt(1+i)};alpha={policy_learner.alpha()}")
+
+        print(pi.epsilon())
+        print(policy_learner._pi.epsilon())
         
+        print(
+            f"""
+
+            ========================================================
+            Episode: {i}
+            Duration: {round(episode_duration,4)}
+            Epsilon={pi.epsilon()}; alpha={policy_learner.alpha()}
+            ========================================================
+
+            """
+        )
+        
+        pi.set_epsilon(1/math.sqrt(1+0.25*i))
+
+    plt.plot(episode_durations, label="Episode Timings")
+
+    plt.xlabel("Episode")
+    plt.ylabel("Time (seconds)")
+    
+    plt.title("Time required for each episode")
+    plt.legend()
+    plt.show()
+    
