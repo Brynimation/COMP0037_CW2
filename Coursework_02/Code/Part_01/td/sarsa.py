@@ -25,7 +25,7 @@ class SARSA(TDController):
         self._v.set_name("SARSA Expected Value Function")
         self._pi.set_name("SARSA Greedy Policy")
                     
-    def _update_action_and_value_functions_from_episode(self, episode):
+    def _update_action_and_value_functions_from_episode(self, episode, update_action):
         
         # Q2g:
         # Complete implementation of this method
